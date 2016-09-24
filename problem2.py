@@ -86,4 +86,4 @@ state = State(iboard,0,[])
 state.hs = heuristic(state)
 result = solve(state)
 pBoard(result.st)
-print result.path
+print " ".join(s for s in result.path)
