@@ -1,3 +1,8 @@
+'''
+We initially used  Misplaced tiles as the heuristic function it was taking a long time to get to the result.
+We then changed the heuristic to Manhattan distance(changed to adopt the new variation) the results were returning results faster.
+However the number of moves were very large. So we introduced a additional heuristics to keep track of the length of path taken so far. This made it little slow compared to earlier result because it would have to traverse more successors but we were returned with a list fast and with minimal number of moves.
+'''
 from copy import deepcopy
 import sys
 class State():
