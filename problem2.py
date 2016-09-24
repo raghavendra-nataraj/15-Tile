@@ -8,6 +8,7 @@ class State():
 	
 fringe = []
 mem = []
+myGoal = range(1,16)
 def pBoard(state):
     board =  [ state[i*4:i*4+4] for i in range(0,4)]
     for i in board:
@@ -58,7 +59,8 @@ def notExist(state):
         return True
 
 def is_goal(state):
-    return all( [state[i]==i+1 for i in range(0,len(state)-1)])
+    #return all( [state[i]==i+1 for i in range(0,len(state)-1)])
+    return state[0:15]== myGoal
 
 # Solve 15-puzzle!
 def solve(initial_stage):
