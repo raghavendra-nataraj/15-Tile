@@ -21,7 +21,7 @@ The algorithm selects the successor with the least value for the sum of the abov
 The Heuristic function used and the design decisions made:
 We initially used  Misplaced tiles as the heuristic function but it was taking a long time to get to the result.
 We then changed the heuristic to Manhattan distance(changed to adopt the new variation) the program and it was returning results faster.
-However the number of moves was quite high. So we introduced an additional heuristics to keep track of the length of path taken so far.
+However the number of moves was quite high. So with additionally adding length of path taken so far it gives more optimal solution.
 This made it little slow compared to earlier result because it would have to traverse more successors but it returned the results faster and with minimal number of moves.
 
 The Cost of path traversed till current node is making the search slower(more like bfs) but it returns the shortest solution.
